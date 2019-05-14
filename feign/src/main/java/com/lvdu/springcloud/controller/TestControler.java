@@ -1,9 +1,12 @@
 package com.lvdu.springcloud.controller;
 
+import com.lvdu.springcloud.rpc.TestRpc;
 import com.lvdu.springcloud.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * TestControoler
@@ -14,12 +17,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestControler {
 
-    @Autowired
+    @Resource
     private TestService testService;
+    @Resource
+    private TestRpc testRpc;
 
 
     @GetMapping(value = "/test")
     public String test(String name){
+//        return name+"--"+testRpc.test(name);
         return name+"--"+testService.test(name);
     }
 }

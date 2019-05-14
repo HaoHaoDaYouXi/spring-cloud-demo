@@ -13,7 +13,7 @@ import javax.annotation.Resource;
  * @author TONE
  * @date 2019/4/1
  */
-@Service("testService")
+@Service("TestService")
 public class TestServiceImpl implements TestService {
 
     @Resource

@@ -10,5 +10,9 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:9890/eureka/
 
+#feign是自带断路器功能的，并且默认打开，如果你要关闭的话，需要加上这个配置：
+#feign:
+#  hystrix:
+#    enabled: false
 
 
