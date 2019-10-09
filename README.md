@@ -1,3 +1,4 @@
 # spring-cloud
-## spring cloud基础模板使用eureka、zuul、ribbon、feign
-## 只有原始功能，可以根据实际情况在添加模块
+## spring cloud学习写的基础模板
+## 使用eureka、zuul、ribbon、feign
+## 可以根据实际情况在调整
